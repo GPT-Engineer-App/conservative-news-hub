@@ -5,7 +5,7 @@ import { FaRegNewspaper, FaRegClock, FaRegEye } from "react-icons/fa";
 const NewsCard = ({ title, summary, imageSrc, readTime, views }) => {
   return (
     <Box borderWidth="1px" borderRadius="lg" overflow="hidden" boxShadow="sm" p={4} bg="white">
-      <Image src={imageSrc} borderRadius="md" />
+      <Image src={imageSrc} borderRadius="md" boxSize="100px" objectFit="cover" />
       <VStack align="start" mt={2}>
         <Heading as="h3" size="md" fontWeight="semibold">
           {title}
